@@ -1,38 +1,727 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerBtn {
+  background-color: #241b62;
+  border: none;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.leftHeader img {
+  width: 25%;
+}
+.parent {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  /* display: none; */
+}
+.headerParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+.list {
+  display: flex;
+  list-style: none;
+  column-gap: 50px;
+}
+.list li a {
+  color: #241b62;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+.leftHeader {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  column-gap: 30px;
+}
+.rightHeader {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: baseline;
+}
+.magnifylogo {
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #00000026;
+}
+.nav-parent {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 10px 0;
+}
+.nav-parent img {
+  width: 40px;
+  height: 40px;
+}
+.nav-parent p {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.nav-grandparent {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+}
+.nav-section {
+  background-color: #241b62;
+  /* display: none; */
+}
+.banner-body {
+  background-image: url(./images/banner.png);
+  width: 100%;
+  height: 515px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parent-button {
+  background-color: #ffff;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 30px 10px;
+  transition: 1s ease-in-out;
+}
+.parent-button:hover {
+  background-color: #f9bb06;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+.parent-button button {
+  background-color: transparent;
+  border-radius: 5px;
+  color: #07153a;
+  border-color: #07153a;
+  padding: 8px 30px;
+  border: 1px solid #07153a;
+  font-weight: 700;
+  font-size: 20px;
+}
+.bannerHeader {
+  width: 75%;
+  margin: 40px auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bannerHeader h1 {
+  font-size: 55px;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bannerHeader p {
+  font-size: 23px;
+  width: 70%;
+  margin: 10px auto;
+  color: cornsilk;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rectangle {
+  background-image: url("./images/blue-rectangle.png");
+  width: 180px;
+  height: 136px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+.rectangle img {
+  position: absolute;
+  top: -30px;
+  width: 65px;
+  right: 35px;
+}
+.rectangle h3 {
+  margin-top: 45px;
+  font-size: 22px;
+}
+.rectange2 {
+  background-image: url("./images/yellow-rectangle.png");
+}
+.rect-parent {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  column-gap: 25px;
+}
+.aside-circle {
+  width: 110px;
+  height: 375px;
+}
+.aside-circle img {
+  width: 100%;
+}
+.deepcolor {
+  color: #f9bb06;
+}
+.left-content {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  column-gap: 40px;
+}
+.aside-parent {
+  display: flex;
+  margin-top: 85px;
+}
+.asideHeading {
+  width: 35%;
+}
+.asideHeading h2 {
+  font-size: 40px;
+  color: #1d3c87;
+  font-weight: 500;
+}
+.form-parent {
+  background-color: #dee8ff;
+  padding: 30px 25px;
+  border-radius: 5px;
+  text-align: center;
+  width: 55%;
+}
+.input {
+  width: 50%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  margin: 10px 0;
+  outline-color: skyblue;
+}
+.input2 {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  margin: 10px 0;
+  outline-color: skyblue;
+}
+.inputsection {
+  display: flex;
+  column-gap: 20px;
+}
+.formBtn {
+  background-color: #1d3c87;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 1s ease-in-out;
+}
+.formBtn button {
+  background-color: transparent;
+  border-radius: 5px;
+  color: #07153a;
+  border-color: #07153a;
+  padding: 8px 50px;
+  border: none;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.formBtn:hover {
+  background-color: #f9bb06;
+  cursor: pointer;
+}
+.form-parent h2 {
+  color: #1d3c87;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card-parent {
+  background-image: url("./images/card.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 253px;
+  height: 255px;
+  position: relative;
+  text-align: center;
+  color: #1d3c87;
+}
+.card-parent p {
+  font-size: 12px;
+  width: 75%;
+  margin: 0 auto;
+}
+.img1 {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+.img2 {
+  position: absolute;
+  bottom: 8px;
+  left: 6px;
+}
+.cardSection {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  column-gap: 20px;
+}
+.cardlogo {
+  margin-top: 25px;
+  width: 30%;
+}
+.bene-header {
+  text-align: center;
+  margin: 50px 0;
+}
+.bene-header h2 {
+  font-size: 2.5rem;
+  color: #1d3c87;
+}
+.toolcard {
+  border: 2px solid #1d3c87;
+  padding: 20px 15px;
+  width: 32%;
+}
+.toolCard-parent {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  column-gap: 20px;
+}
+.toolcard h3 {
+  font-size: 1.5rem;
+  color: #1d3c87;
+}
+.toolcard h4 {
+  color: #1d3c87;
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+.priceSection {
+  background-color: #1d3c87;
+  display: inline-block;
+  padding: 0px 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.btns {
+  background-color: transparent;
+  border: 2px solid #1d3c87;
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #1d3c87;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btnsDiv {
+  display: flex;
+  column-gap: 25px;
+}
+.toolBox {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #1d3c87;
+}
+.boxParent {
+  display: flex;
+  column-gap: 13px;
+}
+.toolcard:hover {
+  background-image: url("./images/tools-bg.png");
+}
+.toolcard:hover .priceSection {
+  background-color: #f9bb06;
+}
+.toolcard:hover h3,
+.toolcard:hover h4,
+.toolcard:hover button,
+.toolcard:hover .boxParent .toolBox {
+  color: #fff;
+  border-color: #fff;
+}
+.skillSection {
+  background-image: url("./images/tools-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+}
+.skillHeader {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+.skillHeader h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: padd;
+  padding: 40px 0;
+}
+.skillbtnss {
+  border: none;
+  padding: 14px 0px;
+  border-radius: 8px;
+  border-left: 8px solid #f9bb06;
+  font-weight: 600;
+}
+.btnSkillhandle {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 7px;
+  row-gap: 17px;
+}
+.skillSection {
+  margin: 50px 0;
+}
+.roleParent {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+.role1 {
+  display: flex;
+  column-gap: 22px;
+  margin: 25px 0;
+}
+.role2 {
+  column-gap: 22px;
+  display: flex;
+}
+.certificate-Section {
+  background-image: url(./images/Group\ 270.png);
+  width: 100%;
+  /* height: 515px; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 60px 0;
+}
+.certParent {
+  column-gap: 28px;
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 75%;
+  /* margin: 50px auto; */
+  display: flex;
+}
+.setPosition {
+  margin-top: 60px;
+}
+.leftSide h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1d3c87;
+}
+.leftSide h2 {
+  font-size: 3.5rem;
+  color: #1d3c87;
+}
+.feeStructure {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.leftSide p {
+  color: #1d3c87;
+  font-size: 28px;
+}
+.fee {
+  background-color: #f9bb06;
+}
+.fee p {
+  font-size: 30px;
+  padding: 3px 5px;
+  color: #1d3c87;
+  font-weight: 600;
+}
+.amount {
+  background-color: #1d3c87;
+}
+.amount p {
+  color: #fff;
+  font-size: 30px;
+  padding: 3px 15px;
+  font-weight: 500;
+}
+.logoSize {
+  width: 300px;
+}
+.logoSize img {
+  width: 100%;
+}
+.certifiedby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+.leftSide {
+  width: 100%;
+}
+.rightSide {
+  margin-top: 40px;
+  width: 100%;
+}
+.rightSide img {
+  width: 100%;
+}
+.btnsection {
+  display: flex;
+  column-gap: 10px;
+  margin-right: 10px;
+}
+.paragr {
+  font-size: 22px;
+  width: 70%;
+  margin: 0px auto;
+  /* line-height: 40px; */
+  color: #1d3c87;
+  font-weight: 400;
+  width: 70%;
+  margin: 20px auto;
+}
+.btnAccord {
+  margin: 3rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.btnAccord button {
+  background-color: #1d3c87;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 34px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.accordionParent {
+  width: 75%;
+  margin: 0 auto;
+}
+.accordion-content {
+  padding: 12px 10px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #1d3c87;
+}
+.accordion-item {
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  font-size: 22px;
+  background-color: #dee8ff;
+  color: #1d3c87;
+  border-radius: 5px;
+  align-items: center;
+}
+
+/* .accordion-title:hover {
+  background-color: #1d3c87c;
+  color: #fff;
+  cursor: pointer;
+} */
+@media only screen and ((min-width: 320px) and (max-width:768px)) {
+  .bannerHeader H1 {
+    font-size: 35px;
+    padding-top: 55px;
   }
-  to {
-    transform: rotate(360deg);
+  .banner-body {
+    height: 100%;
+  }
+  .bannerHeader {
+    width: 100%;
+  }
+  .parent {
+    display: none;
+  }
+  .nav-section {
+    display: none;
+  }
+  .bannerHeader p {
+    font-size: 14px;
+    text-align: -webkit-center;
+    width: 100%;
+  }
+  .left-content {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -54px;
+  }
+  .rect-parent {
+    flex-wrap: wrap;
+  }
+  /* .aside-parent {
+    flex-wrap: wrap;
+  } */
+  .cardSection {
+    flex-wrap: wrap;
+  }
+  .toolCard-parent {
+    flex-wrap: wrap;
+  }
+
+  .parent-button {
+    margin: 5px 10px;
+  }
+  .rect-parent {
+    column-gap: 17px;
+  }
+  .rectangle {
+    width: 125px;
+    height: 94px;
+    margin-bottom: 53px;
+  }
+  .rectangle h3 {
+    font-size: 14px;
+    margin-top: 36px;
+  }
+  .rectangle h2 {
+    font-size: 20px;
+  }
+  .parent-button button {
+    font-size: 16px;
+    padding: 8px 35px;
+  }
+  .asideHeading {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+  }
+  .asideHeading h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .aside-parent {
+    position: relative;
+    width: 100%;
+    height: 427px;
+  }
+  .form-parent {
+    position: absolute;
+    top: 40px;
+    left: 18px;
+    width: 87%;
+  }
+  .inputsection input {
+    padding: 9px;
+    font-size: 13px;
+  }
+  .form-parent input {
+    padding: 9px;
+    font-size: 13px;
+  }
+  .toolCard-parent {
+    justify-content: center;
+    width: 100%;
+  }
+  .toolcard {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .skillHeader {
+    width: 100%;
+  }
+  .btnSkillhandle {
+    display: grid;
+    padding: 0px 40px;
+    /* flex-wrap: wrap; */
+    /* align-items: center;
+    justify-content: center; */
+    column-gap: 7px;
+    row-gap: 17px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skillbtnss {
+    width: 90% !important;
+    height: 38px;
+    font-size: 10px !important;
+    cursor: pointer;
+    padding: 8px 0px;
+  }
+  .bene-header {
+    margin: 30px auto;
+  }
+  .bene-header h1 {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .accordion-content {
+    font-size: 12px;
+  }
+  .certificate-Section {
+    height: 100%;
+  }
+  /* .leftSide h3 {
+    font-size: 20px;
+  } */
+  .setPosition {
+    display: none;
+  }
+  .leftSide h2 {
+    font-size: 40px;
+  }
+  .leftSide h3 {
+    font-size: 26px;
+  }
+  .certParent {
+    margin-left: 0;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .fee p {
+    font-size: 20px;
+  }
+  .amount p {
+    font-size: 20px;
+  }
+  .formBtn {
+    height: fit-content;
+  }
+  .formBtn button {
+    font-size: 15px;
+    padding: 12px 0px;
+  }
+  .certificate-Section {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .btnAccord {
+    text-align: center;
+  }
+  .btnAccord button {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+  .paragr {
+    font-size: 16px;
+  }
+  .bene-header h2 {
+    font-size: 34px;
   }
 }
