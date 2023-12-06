@@ -18,13 +18,13 @@ const Header = () => {
           </span>
           <ul className="list">
             <li>
-              <a href="">Resources</a>
+              <a href="https://www.google.com/">Resources</a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <a href="https://www.google.com/">Blog</a>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="https://www.google.com/">Contact Us</a>
             </li>
             <li>
               <HeaderButton name={"Login"} />
